@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'jangMi';
+    src: url('../public/font/jangMi.ttf')
+  }
+  @font-face {
+    font-family: 'anSsang';
+    src: url('../public/font/anSsang.ttf')
+  }
+  @font-face {
+    font-family: 'naNum';
+    src: url('../public/font/NanumSquare_acR.ttf')
+  }
+.anSsang{
+    font-family: 'anSsang';
+}
+header{
+    
+    height:15vh;
+}
+.content{
+    margin-right : auto;
+    margin-left : auto;
+    width: 80vw;
+}
+.foodimg{
+    display:block;
+    width: 80vw;
+    
+}
+.info{
+    width: 80vw;
+    /*background-color:rgba(0, 0, 0, 0.1);*/
+}
+
+.allReviewBox{
+    margin-top:10px;
+    margin-bottom:10px;
+    display: flex;
+    align-items:center;
+    width: 80vw;
+    height: 15vh;
+    background-color: rgba(255, 215, 72, 1);
+    border-radius:20px;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+.dotsImg{
+    margin-top:40px;
+    margin-bottom:40px;
+    text-align : center;
+}
+.selectBox{
+    margin-top:10px;
+    margin-bottom:10px;
+    display: flex;
+    align-items:center;
+    height: 10vh;
+    border-radius:20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.circle{
+    margin : 10px;
+    text-align : center;
+    padding:6px 0px;
+    color:white;
+    width:5vh;
+    height:5vh;
+    border-radius:50%;
+    background-color: rgba(255, 215, 72, 1);
+    
+}
+.selectors{
+    padding : 10px;
+    width:70vw;
+    /*background-color:rgba(0, 0, 0, 0.1);*/
+    text-align : center;
+}
+
+button{
+    border:none;
+    background-color:transparent;
+}
+table{
+    width:100%;
+    text-align: center;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+}
+.submit{
+    width:100%;
+    margin-right : auto;
+    margin-left : auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+}
+footer{
+    margin-top : 30px;
+    padding:20px 0px;
+    text-align: center;
+    background-color:rgba(255, 215, 72, 1);
+    height:15vh;
+}

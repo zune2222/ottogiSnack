@@ -1,11 +1,25 @@
  
 import React from "react";
+import {Link} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+
 function Menu(data){
-    const {name,explain,price,img,thumb}=data;
+    const {id,name,explain,detail,price,img,thumb}=data;
     return (
         <div>
+            <Link to={{
+                pathname:`/menu/${id}`,
+                state:{
+                    name:name,
+                    explain:explain,
+                    detail:detail,
+                    price:price,
+                    img:img,
+                    thumb:thumb
+                },
+            }} style={{textDecoration:'none', color : 'black'}}  //링크 다니까 파란 글자+밑줄이 되길래 임시로 추가했어요! 나중에 css파일에 옮겨야 할 듯
+            >
             <div className="mx-2" style={{ marginTop: "10px", marginBottom: "10px", width: "188px", height: "315px", backgroundColor: "white" }}>
                 <img className="picture" src={img} style={{ marginLeft:"20px",position: "absolute", width: "165px", top:"15px",height: "176px", zIndex: "99" }} />
                 <div style={{ marginTop:"100px",width: "188px", height: "30vh", borderRadius: "25px", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)" }}>
@@ -22,6 +36,7 @@ function Menu(data){
                     </div>
                 </div>
             </div>
+            </Link>
         </div>
     )
 }

@@ -2,9 +2,14 @@
 import React, { useState,useEffect } from "react";
 import Menu from "./Menu"
 import "./App.css"
+import firebaseInit from "./firebaseInit"; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollHorizontal from 'react-scroll-horizontal';
+
+
 const Main = () => {
+    console.log(firebaseInit);
+    
     return (
         <div id="backGround" style={{overflow:"hidden", backgroundColor: "white" }}>
             <div className="container-fluid">
@@ -18,11 +23,11 @@ const Main = () => {
                         <div className="my-5" />
                         <div style={{ height: "700px" }}>
                             <ScrollHorizontal>
-                                <Menu name="김치찌개" explain="매콤달달한 맛!" price="6,000원" img="./asset/kimchi.png" thumb="243" />
-                                <Menu name="김치찌개" explain="매콤달달한 맛!" price="6,000원" img="./asset/kimchi.png" thumb="243" />
-                                <Menu name="김치찌개" explain="매콤달달한 맛!" price="6,000원" img="./asset/kimchi.png" thumb="243" />
-                                <Menu name="김치찌개" explain="매콤달달한 맛!" price="6,000원" img="./asset/kimchi.png" thumb="243" />
-                                <Menu name="김치찌개" explain="매콤달달한 맛!" price="6,000원" img="./asset/kimchi.png" thumb="243" />
+                                <Menu id="1" name="김치찌개" explain="매콤달달한 맛!" detail='집 김치찌개가 생각나는 오뚜기 분식의 시그니처입니다.' price="6,000원" img="./asset/kimchi.png" thumb="243" />
+                                <Menu id="2" name="test" explain="매콤달달한 맛!" detail='집 김치찌개가 생각나는 오뚜기 분식의 시그니처입니다.' price="6,000원" img="./asset/kimchi.png" thumb="243" />
+                                <Menu id="3" name="test2" explain="매콤달달한 맛!" detail='집 김치찌개가 생각나는 오뚜기 분식의 시그니처입니다.' price="6,000원" img="./asset/kimchi.png" thumb="243" />
+                                <Menu id="4" name="test3" explain="매콤달달한 맛!" detail='집 김치찌개가 생각나는 오뚜기 분식의 시그니처입니다.' price="6,000원" img="./asset/kimchi.png" thumb="243" />
+                                <Menu id="5" name="test4" explain="매콤달달한 맛!" detail='집 김치찌개가 생각나는 오뚜기 분식의 시그니처입니다.' price="6,000원" img="./asset/kimchi.png" thumb="243" />
                             </ScrollHorizontal>
                         </div>
                     </div>
