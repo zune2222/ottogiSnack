@@ -6,17 +6,20 @@ function Menu(data){
     const {name,explain,price,img,thumb}=data;
     return (
         <div>
-            <div style={{ marginTop:"10px",marginBottom:"10px", marginLeft: "auto", marginRight: "auto", borderRadius: "25px", width: "321px", height: "203px", backgroundColor: "white", boxShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)" }}>
-                <div className="d-flex justify-content-center">
-                    <div className="row" style={{width:"150px"}}>
-                        <div className="ibm" style={{ fontSize: "30px", marginTop: "25px"}}>{name}</div>
-                        <div className="ibm" style={{ fontSize: "25px", marginLeft:"15px"}}>{price}</div>
+            <div className="mx-2" style={{ marginTop: "10px", marginBottom: "10px", width: "188px", height: "315px", backgroundColor: "white" }}>
+                <img className="picture" src={img} style={{ marginLeft:"20px",position: "absolute", width: "165px", top:"15px",height: "176px", zIndex: "99" }} />
+                <div style={{ marginTop:"100px",width: "188px", height: "30vh", borderRadius: "25px", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)" }}>
+                    <div className="d-flex justify-content-center" >
+                        <div className="row mx-4">
+                            <div className="my-4"></div>
+                            <div className="anSsang" style={{ fontSize: "30px", marginTop: "25px" }}>{name}</div>
+                            <div className="anSsang" style={{ fontSize: "20px" ,color:"rgba(0, 0, 0, 0.6)" }}>{explain}</div>
+                        </div>
                     </div>
-                    <img className="picture my-3" src={img} />
-                </div>
-                <div className="d-flex justify-content-center">
-                    <div className="ibm" style={{ fontSize: "20px"}}>{explain}</div>
-                    <div className="text-center"style={{fontSize:"20px",color:"white",marginLeft:"15px",backgroundColor:"#FFA101",width:"103px",height:"31px", borderRadius:"40px" ,boxShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)"}}>👍🏻 {thumb}</div>
+                    <div className="d-flex justify-content-center">
+                        <div className="anSsang" style={{ fontSize: "25px"}}>{price}</div>
+                        <div style={{ backgroundImage:`url("./asset/heart.svg")`, marginLeft:"43px",marginTop:"10px",width: "24px",height: "21px",fontSize:"8px",color:"white"}}><div className="text-center" style={{marginTop:"2px"}}>{thumb}</div></div>
+                    </div>
                 </div>
             </div>
         </div>

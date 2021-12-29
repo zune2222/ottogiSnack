@@ -1,20 +1,23 @@
 @font-face {
-  font-family: 'kotraBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'jangMi';
+  src: url('../public/font/jangMi.ttf')
 }
 @font-face {
-  font-family: 'IBMPlexSansKR-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'anSsang';
+  src: url('../public/font/anSsang.ttf')
 }
-.kotraBold{
-  font-family: "kotraBold";
+@font-face {
+  font-family: 'naNum';
+  src: url('../public/font/NanumSquare_acR.ttf')
 }
-.ibm{
-  font-family: 'IBMPlexSansKR-Regular';
+.jangMi{
+  font-family: "jangMi";
+}
+.naNum{
+  font-family: 'naNum';
+}
+.anSsang{
+  font-family: 'anSsang';
 }
 .picture{
   width: 112px;
