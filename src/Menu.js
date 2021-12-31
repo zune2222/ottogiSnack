@@ -21,8 +21,8 @@ function Menu(data){
             }} style={{textDecoration:'none', color : 'black'}}  //링크 다니까 파란 글자+밑줄이 되길래 임시로 추가했어요! 나중에 css파일에 옮겨야 할 듯
             >
             <div className="mx-2" style={{ marginTop: "10px", marginBottom: "10px", width: "188px", height: "315px", backgroundColor: "white" }}>
-                <img className="picture" src={img} style={{ marginLeft:"20px",position: "absolute", width: "165px", top:"15px",height: "176px", zIndex: "99" }} />
-                <div style={{ marginTop:"100px",width: "188px", height: "30vh", borderRadius: "25px", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)" }}>
+                <img className="picture" src={img} style={{ marginLeft:"20px", width: "165px", height: "176px", zIndex: "99" }} />
+                <div style={{ marginTop:"-80px",width: "188px", height: "30vh", borderRadius: "25px", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)" }}>
                     <div className="d-flex justify-content-center" >
                         <div className="row mx-4">
                             <div className="my-4"></div>
