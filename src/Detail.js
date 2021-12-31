@@ -1,4 +1,4 @@
-import React from "react";
+import React, { cloneElement } from "react";
 import "./Detail.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -21,9 +21,12 @@ class Detail extends React.Component{
         let gasungbi='만족해요';
 
         return (<div class='main'>
-        <header style={{ backgroundImage:`url("../asset/detailHeader.svg")`, backgroundRepeat:"repeat-x"}}>
-            <img src="..\asset\arrow.svg"></img>
-            <div style={{ backgroundImage:`url("../asset/whiteHeart.svg")`, backgroundRepeat:"no-repeat", width:"5vh",height:"5vh",float:'right', textAlign:"center",border:'solid 1px',fontSize:"8px",color:"rgba(255, 215, 72, 1)"}}>{thumb}</div>
+        <header style={{ backgroundImage:`url("../asset/detailHeader.svg")`, backgroundRepeat:"repeat-x",
+        display:"flex", justifyContent:"space-between"}}>
+            <div style={{width:"4vh", height:"4vh"}}><img src="..\asset\arrow.svg"></img></div>
+            <div class='heart' style={{ backgroundImage:`url("../asset/whiteHeart.svg")`, backgroundRepeat:"no-repeat",
+            width:"4vh", height:"4vh",float:'right', textAlign:"center",
+            lineHeight:"3vh", border:'solid 1px', fontSize:"8px",color:"rgba(255, 215, 72, 1)"}}>{thumb}</div>
         </header>
         <div class='content'>
         <img class='foodimg' src="..\asset\kimchi.png"></img>
