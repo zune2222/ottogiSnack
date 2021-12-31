@@ -1,4 +1,5 @@
 import React, { cloneElement } from "react";
+import {Link} from "react-router-dom";
 import "./Detail.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -23,7 +24,7 @@ class Detail extends React.Component{
         return (<div class='main'>
         <header style={{ backgroundImage:`url("../asset/detailHeader.svg")`, backgroundRepeat:"repeat-x",
         display:"flex", justifyContent:"space-between"}}>
-            <div style={{width:"4vh", height:"4vh"}}><img src="..\asset\arrow.svg"></img></div>
+            <div style={{width:"4vh", height:"4vh"}}><Link to="/"><img src="..\asset\arrow.svg"></img></Link></div>
             <div class='heart' style={{ backgroundImage:`url("../asset/whiteHeart.svg")`, backgroundRepeat:"no-repeat",
             width:"4vh", height:"4vh",float:'right', textAlign:"center",
             lineHeight:"3vh", border:'solid 1px', fontSize:"8px",color:"rgba(255, 215, 72, 1)"}}>{thumb}</div>
