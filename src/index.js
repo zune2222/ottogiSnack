@@ -6,11 +6,11 @@ import Main from "./Main";
 import Detail from "./Detail";
 
 ReactDom.render(
-    <BrowserRouter >
-        <Routes>
-            <Route exact={true} path="/" element={<Main/>}/>
-            <Route path="/menu/:id" element={<Detail/>}/>
-        </Routes>
-    </BrowserRouter>, 
-    document.getElementById("root")
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Routes>
+      <Route exact={true} path="/" element={<Main />} />
+      <Route path="/menu/:id" element={<Detail />} />
+    </Routes>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
